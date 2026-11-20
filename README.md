@@ -1,78 +1,166 @@
 # OrangeHRM Functional Testing Project
 
 ## 1. Project Overview
+
 This project focuses on Manual Functional Testing and UI Testing of the OrangeHRM demo web application.
 
+**Application Name:** OrangeHRM  
 **Application URL:** https://opensource-demo.orangehrmlive.com/
 
-## 2. Project Objectives
-- Verify login functionality.
-- Test employee information management.
-- Validate employee search functionality.
-- Verify Add Employee functionality.
-- Test Reset functionality.
-- Check UI elements and page navigation.
-- Record actual results and identify defects.
+The objective of this project is to understand how manual testing is performed on a real-world HR management application.
 
-## 3. Testing Details
+## 2. Project Objectives
+
+- Verify login functionality.
+- Validate successful and unsuccessful login scenarios.
+- Test dashboard navigation.
+- Verify employee information management.
+- Validate employee search functionality.
+- Test Add Employee functionality.
+- Verify Reset functionality.
+- Record actual and expected results.
+- Document testing evidence using screenshots.
+
+## 3. Application Details
+
 | Details | Description |
 |---|---|
 | Application | OrangeHRM |
 | Testing Type | Manual Testing |
-| Testing Approach | Functional Testing, UI Testing |
+| Testing Approach | Functional Testing and UI Testing |
+| Modules Tested | Login and PIM |
 | Total Test Cases | 30 |
 | Confirmed Bugs | 0 |
 | Test Documentation | Microsoft Excel |
 
 ## 4. Modules Tested
-1. Login
-2. Dashboard
-3. PIM (Personnel Information Management)
-4. Employee Search
-5. Add Employee
-6. Reset Functionality
 
-## 5. Tools Used
-- Microsoft Excel
-- Google Chrome
-- GitHub
+### 4.1 Login Module
+- Verify login with valid credentials.
+- Verify login with invalid credentials.
+- Validate login error messages.
+- Verify login page elements.
 
-## 6. Test Case Summary
+### 4.2 Dashboard Module
+- Verify successful navigation to Dashboard.
+- Check dashboard page display.
 
-| Module | Test Cases |
+### 4.3 PIM Module
+- Verify PIM page navigation.
+- Validate Employee Information page.
+- Search employees by name.
+- Search employees by employee ID.
+- Test invalid employee search.
+- Verify Reset functionality.
+- Verify Add Employee page and form fields.
+
+## 5. Testing Types
+
+- **Functional Testing:** Checking whether application features work as expected.
+- **UI Testing:** Checking page elements, buttons, input fields and navigation.
+- **Positive Testing:** Testing with valid input data.
+- **Negative Testing:** Testing with invalid input data.
+
+## 6. Tools Used
+
+| Tool | Purpose |
+|---|---|
+| Google Chrome | Web application testing |
+| Microsoft Excel | Test case preparation and execution results |
+| GitHub | Project documentation and storage |
+
+## 7. Test Case Summary
+
+| Test Module | Number of Test Cases |
 |---|---:|
-| Login | 15 |
-| PIM | 15 |
+| Login Module | 15 |
+| PIM Module | 15 |
 | **Total** | **30** |
 
-## 7. Screenshots
+Test cases are documented in separate Excel files.
 
-### 7.1 Login Page
-![Login Page](screenshots/01-login-page.png)
+- [Login Test Cases](Test%20Cases/OrangeHRM_Login_Test_Cases.xlsx)
+- [PIM Test Cases](Test%20Cases/OrangeHRM_PIM_Test_Cases.xlsx)
 
-### 7.2 Invalid Login Credentials
-![Invalid Login](screenshots/02-invalid-login.png)
+## 8. Screenshots
 
-### 7.3 Dashboard
-![Dashboard](screenshots/03-dashboard.png)
+The following screenshots were captured during manual testing.
 
-### 7.4 PIM Employee Information
-![Employee Information](screenshots/04-pim-employee-list.png)
+### 8.1 Login Page
+![Login Page](screenshots/login-page.png)
 
-### 7.5 Employee Search Result
-![Employee Search](screenshots/05-employee-search-result.png)
+### 8.2 Invalid Login Credentials
+![Invalid Login](screenshots/invalid-login.png)
 
-### 7.6 Add Employee Page
-![Add Employee](screenshots/06-add-employee-page.png)
+### 8.3 Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-### 7.7 Employee Personal Details
-![Employee Details](screenshots/07-employee-personal-details.png)
+### 8.4 PIM Employee Information
+![PIM Employee List](screenshots/pim-employee-list.png)
 
+### 8.5 Employee Search Result
+![Employee Search](screenshots/employee-search-result.png)
 
-## 8. Test Execution Summary
-A total of 30 test cases were prepared and executed manually across the Login and PIM modules. Test results were recorded in Excel. No confirmed defects were identified during the testing performed.
+### 8.6 Add Employee Page
+![Add Employee](screenshots/Add-employee-page.png)
 
-## 9. Conclusion
-This project provided practical experience in manual testing, test case preparation, test execution, validating expected and actual results, screenshot documentation, and defect reporting.
+### 8.7 Employee Personal Details
+![Employee Personal Details](screenshots/employee-personal-details.png)
 
-**Project Status:** Completed
+## 9. Bug Report
+
+A bug report document is included in this project.
+
+- Confirmed Bugs Found: 0
+- Bug Report File: OrangeHRM_Bug_Reports.xlsx
+
+No confirmed defects were identified during the testing performed.
+
+[View Bug Report](Bug%20Reports/OrangeHRM_Bug_Reports.xlsx)
+
+## 10. Test Execution Summary
+
+A total of 30 test cases were prepared and executed manually across the Login and PIM modules.
+
+Expected results and actual results were recorded in Excel. Screenshots were captured as testing evidence.
+
+## 11. Project Folder Structure
+
+```text
+OrangeHRM-Functional-Testing/
+│
+├── Test Cases/
+│   ├── OrangeHRM_Login_Test_Cases.xlsx
+│   └── OrangeHRM_PIM_Test_Cases.xlsx
+│
+├── screenshots/
+│   ├── login-page.png
+│   ├── invalid-login.png
+│   ├── dashboard.png
+│   ├── pim-employee-list.png
+│   ├── employee-search-result.png
+│   ├── Add-employee-page.png
+│   └── employee-personal-details.png
+│
+├── Bug Reports/
+│   └── OrangeHRM_Bug_Reports.xlsx
+│
+└── README.md
+```
+
+## 12. Conclusion
+
+Through this project, I gained practical experience in:
+
+- Understanding a web application.
+- Preparing manual test cases.
+- Executing test cases.
+- Validating expected and actual results.
+- Performing positive and negative testing.
+- Capturing screenshots.
+- Maintaining test documentation.
+- Reporting testing results.
+
+**Project Status: Completed**
+
+**Testing Approach: Manual Testing**
